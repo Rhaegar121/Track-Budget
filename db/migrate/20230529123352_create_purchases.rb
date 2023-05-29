@@ -1,11 +1,9 @@
 class CreatePurchases < ActiveRecord::Migration[7.0]
   def change
     create_table :purchases do |t|
-      t.integer :author_id
-      t.string :name
-      t.decimal :amount
-      t.datetime :created_at
-      t.references :user, null: false, foreign_key: true
+      t.references :author, null: false, foreign_key: { to_table: :users }
+      t.string :name, null: false, unique: true, index: true
+      t.integer :amount, null: false, default: 0
 
       t.timestamps
     end
