@@ -4,10 +4,12 @@
 <% else %>
     <ul>
         <% @categories.each do |category| %>
-            <li>
-                <div><%= category.icon %></div>
-                <div><%= category.name %></div>
-            </li>
+            <%= link_to category_purchases_path(category.id) do %>
+                <li>
+                    <div><%= category.icon %></div>
+                    <div><%= category.name %></div>
+                </li>
+            <% end %>
         <% end %>
     </ul>
 <% end %>

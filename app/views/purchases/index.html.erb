@@ -1,0 +1,17 @@
+<%= render 'shared/header', title: "Purchases", back: true %>
+
+<% if @purchases.empty? %>
+    <h2>No purchase found for this category.</h2>
+<% else %>
+    <ul>
+        <% @purchases.each do |purchase| %>
+            <li>
+                <div><%= purchase.name %></div>
+                <div><%= purchase.amount %></div>
+            </li>
+        <% end %>
+    </ul>
+<% end %>
+
+<%# <%= link_to "Add Category", new_category_path %>
+
