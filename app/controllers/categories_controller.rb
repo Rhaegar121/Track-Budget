@@ -7,4 +7,7 @@ class CategoriesController < ApplicationController
 
   def create
   end
+
+  def splash
+  end
 end
