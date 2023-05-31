@@ -1,3 +1,13 @@
 <%= render 'shared/header', title: "categories", back: false %>
-<h1>Categories#index</h1>
-<p>Find me in app/views/categories/index.html.erb</p>
+<% if @categories.empty? %>
+    <h2>No category found</h2>
+<% else %>
+    <ul>
+        <% @categories.each do |category| %>
+            <li>
+                <div><%= category.icon %></div>
+                <div><%= category.name %></div>
+            </li>
+        <% end %>
+    </ul>
+<% end %>
