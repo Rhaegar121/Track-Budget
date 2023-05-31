@@ -1,2 +1,31 @@
-<h1>Categories#new</h1>
-<p>Find me in app/views/categories/new.html.erb</p>
+<%= render 'shared/header', title: "add category", back: true %>
+
+<%= form_with model: @category do |f| %>
+    <div>
+        <%= f.label :name, "Name:" %>
+        <%= f.text_field :name, required: true %>
+    </div>
+
+      <% options = [  ["🍔"],
+    ["🛒"],
+    ["🚗"],
+    ["🐶"],
+    ["📚"],
+    ["💻"],
+    ["🎁"],
+    ["🏠"],
+    ["🏥"],
+    ["🎬"],
+    ["👔"],
+    ["🎓"],
+  ] %>
+
+   <div>
+        <%= f.label :icon %>
+        <%= f.select :icon, options_for_select(options, selected: @category.icon), {prompt: "Select an icon" } %>
+  </div>
+
+    <div>
+        <%= f.submit "Add food" %>
+    </div>
+<% end %>
