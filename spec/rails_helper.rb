@@ -13,6 +13,9 @@ def login_user
     password: 'password',
     confirmed_at: Time.now
   )
+  @category = Category.create(name: 'Category', icon: 'Icon', author_id: @user.id)
+  @purchase = Purchase.create(name: 'Purchase', amount: 10, author_id: @user.id)
+  @category_purchase = CategoryPurchase.create(category_id: @category.id, purchase_id: @purchase.id)
   visit user_session_path
   fill_in 'user_email', with: 'user@gmail.com'
   fill_in 'user_password', with: 'password'
