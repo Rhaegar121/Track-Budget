@@ -1,0 +1,13 @@
+<header>
+  <% if back %>
+    <%= link_to "back", :back %>
+  <% end %>
+  <%= title.upcase %>
+  <% if title == "Log In" %>
+    <%= link_to "Register", new_user_registration_path %>
+  <% elsif title == "Sign Up" %>
+    <%= link_to "Log In", new_user_session_path %>
+  <% else %>
+    <%= button_to "sign out", destroy_user_session_path, method: :delete %>
+  <% end %>
+</header>
