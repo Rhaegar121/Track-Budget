@@ -3,6 +3,7 @@
 <% if @purchases.empty? %>
     <h2>No purchase found for this category.</h2>
 <% else %>
+    <p>Total amount: <%= @total %></p>
     <ul>
         <% @purchases.each do |purchase| %>
             <li>
@@ -13,5 +14,6 @@
     </ul>
 <% end %>
 
-<%# <%= link_to "Add Category", new_category_path %>
+<%= link_to "Add Purchase", new_category_purchase_path(@category.id) %>
+
 

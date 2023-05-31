@@ -1,2 +1,17 @@
-<h1>Purchases#new</h1>
-<p>Find me in app/views/purchases/new.html.erb</p>
+<%= render 'shared/header', title: "add purchase", back: true %>
+
+<%= form_with model: @purchase, url: category_purchases_path do |f| %>
+    <div>
+        <%= f.label :name, "Name:" %>
+        <%= f.text_field :name, required: true %>
+    </div>
+
+    <div>
+        <%= f.label :amount %>
+        <%= f.number_field :amount, placeholder: '0', required: true %>
+    </div>
+
+    <div>
+        <%= f.submit "Add purchase" %>
+    </div>
+<% end %>

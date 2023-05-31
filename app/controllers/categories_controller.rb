@@ -15,7 +15,6 @@ class CategoriesController < ApplicationController
       redirect_to categories_path, notice: 'Category was successfully created.'
     else
       redirect_to new_category_path, alert: 'Category was not created.'
-      puts @category.errors.full_messages
     end
   end
 
