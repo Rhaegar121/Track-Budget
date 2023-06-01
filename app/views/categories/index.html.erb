@@ -6,13 +6,16 @@
     <ul>
         <% @categories.each do |category| %>
             <%= link_to category_purchases_path(category.id) do %>
-                <li>
+                <li class="category">
                     <div><%= category.icon %></div>
                     <div><%= category.name %></div>
-                    <div>Total spent: <%= number_to_currency(category.total) %></div>
+                    <div><%= number_to_currency(category.total) %></div>
                 </li>
             <% end %>
         <% end %>
     </ul>
 <% end %>
-<%= link_to "Add Category", new_category_path %>
+
+<div class="addLink">
+    <%= link_to "Add Category", new_category_path %>
+</div>

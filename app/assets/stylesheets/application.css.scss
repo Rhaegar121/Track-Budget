@@ -29,9 +29,38 @@
    --text: #434b54;
    --primary: #3778c2;
    --secondary: #5fb523;
+   --background: #e3e3e3;
    --white: #fff;
 }
 
 body {
    color: var(--text);
+   background-color: var(--background);
+}
+
+a {
+   text-decoration: none;
+ }
+ 
+ a:hover {
+   cursor: pointer;
+ }
+
+.addLink {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   padding: 15px 20px;
+   background-color: var(--secondary);
+}
+
+.addLink a {
+   color: var(--white);
+   font-size: 1.2rem;
+   font-weight: 300;
+   width: 100%;
+   display: block;
+   padding: 15px 0;
+   border: 1px solid var(--white);
+   text-align: center;
 }
