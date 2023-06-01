@@ -13,16 +13,16 @@
  *= require_tree .
  *= require_self
  */
- @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
  @import "font-awesome";
 
- * {
+ @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans JP', sans-serif;
-    color: var(--text);
  }
 
 :root {
@@ -30,4 +30,8 @@
    --primary: #3778c2;
    --secondary: #5fb523;
    --white: #fff;
+}
+
+body {
+   color: var(--text);
 }

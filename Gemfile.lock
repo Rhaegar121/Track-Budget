@@ -221,6 +221,12 @@ GEM
     rubyzip (2.3.2)
     sassc (2.4.0)
       ffi (~> 1.9)
+    sassc-rails (2.1.2)
+      railties (>= 4.0.0)
+      sassc (>= 2.0)
+      sprockets (> 3.0)
+      sprockets-rails
+      tilt
     selenium-webdriver (4.9.1)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
@@ -235,6 +241,7 @@ GEM
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
     thor (1.2.2)
+    tilt (2.1.0)
     timeout (0.3.2)
     turbo-rails (1.4.0)
       actionpack (>= 6.0.0)
@@ -270,7 +277,7 @@ DEPENDENCIES
   capybara
   debug
   devise
-  font-awesome-sass
+  font-awesome-sass (~> 6.4.0)
   importmap-rails
   jbuilder
   pg (~> 1.1)
@@ -278,6 +285,8 @@ DEPENDENCIES
   rails (~> 7.0.4, >= 7.0.4.3)
   rspec-rails (~> 6.0.0)
   rubocop (>= 1.0, < 2.0)
+  sassc
+  sassc-rails
   selenium-webdriver
   sprockets-rails
   stimulus-rails
