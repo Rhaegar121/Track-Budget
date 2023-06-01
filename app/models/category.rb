@@ -4,4 +4,8 @@ class Category < ApplicationRecord
     has_many :purchases, through: :category_purchases
 
     validates :name, :icon, presence: true
+
+    def total
+        self.purchases.sum(:amount)
+    end
 end

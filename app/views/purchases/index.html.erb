@@ -1,4 +1,5 @@
 <%= render 'shared/header', title: "Purchases", back: categories_path %>
+<%= render 'shared/flash' %>
 
 <% if @purchases.empty? %>
     <h2>No purchase found for this category.</h2>

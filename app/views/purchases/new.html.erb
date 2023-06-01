@@ -1,4 +1,5 @@
 <%= render 'shared/header', title: "add purchase", back: category_purchases_path %>
+<%= render 'shared/flash' %>
 
 <%= form_with model: @purchase, url: category_purchases_path do |f| %>
     <div>
