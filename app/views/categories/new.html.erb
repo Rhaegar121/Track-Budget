@@ -21,11 +21,11 @@
   ] %>
 
    <div>
-        <%= f.label :icon %>
+        <%= f.label :icon, "Select an icon:" %>
         <%= f.select :icon, options_for_select(options, selected: @category.icon), {prompt: "Select an icon" } %>
   </div>
 
-    <div>
+    <div class="btn">
         <%= f.submit "Add Category" %>
     </div>
 <% end %>

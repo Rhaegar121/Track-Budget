@@ -7,11 +7,11 @@
     </div>
 
     <div>
-        <%= f.label :amount, "Amount:" %>
+        <%= f.label :amount, "Amount in USD:" %>
         <%= f.number_field :amount, placeholder: '0', required: true %>
     </div>
 
-    <div>
+    <div class="btn">
         <%= f.submit "Add Purchase" %>
     </div>
 <% end %>
