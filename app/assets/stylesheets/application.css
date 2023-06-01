@@ -13,3 +13,58 @@
  *= require_tree .
  *= require_self
  */
+ @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: var(--text);
+ }
+
+ :root {
+    --text: #434b54;
+    --primary: #3778c2;
+    --secondary: #5fb523;
+    --white: #fff;
+ }
+
+ .splash {
+    position: relative;
+    height: 100vh;
+ }
+
+ h1 {
+    font-family: 'Courgette', cursive;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+ .splash > div {
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    transform: translateX(-50%);
+    width: 92%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+ }
+
+.splash > div > a {
+    text-decoration: none;
+    padding: 12px 0;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+.splash > div > a:first-child {
+    background-color: var(--primary);
+    color: var(--white);
+}
