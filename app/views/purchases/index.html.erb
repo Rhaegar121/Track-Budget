@@ -3,17 +3,27 @@
 <% if @purchases.empty? %>
     <h2>No purchase found for this category.</h2>
 <% else %>
-    <p>Total amount: <%= @total %></p>
-    <ul>
-        <% @purchases.each do |purchase| %>
-            <li>
-                <div><%= purchase.name %></div>
-                <div><%= purchase.amount %></div>
-            </li>
-        <% end %>
-    </ul>
+    <section>
+        <div class="totalPurchase">
+            <span>Total amount: </span>
+            <span><%= number_to_currency(@total) %></span>
+        </div>
+        <div class="category">
+            <span><%= @category.icon %></span>
+            <span><%= @category.name %></span>
+        </div>
+        <ul>
+            <% @purchases.each do |purchase| %>
+                <li class="purchase">
+                    <span><%= purchase.name %></span>
+                    <span><%= number_to_currency(purchase.amount) %></span>
+                </li>
+            <% end %>
+        </ul>
+    </section>
 <% end %>
 
-<%= link_to "Add Purchase", new_category_purchase_path(@category.id) %>
-
+<div class="addLink">
+    <%= link_to "Add Purchase", new_category_purchase_path(@category.id) %>
+</div>
 

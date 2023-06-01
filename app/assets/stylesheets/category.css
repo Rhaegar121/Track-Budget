@@ -1,38 +1,13 @@
-h2 {
-    font-size: 1.5em;
-    width: 100%;
-    margin: 20px auto;
-    text-align: center;
-}
-
-ul {
-    list-style: none;
-    width: 92%;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.category {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10px;
-    background-color: var(--white);
-}
-
-.category div {
+.category span {
     color: var(--text);
 }
 
-.category div:first-child {
+.category span:first-child {
     font-size: 2rem;
     transform: translateY(-4px);
 }
 
-.category div:last-child {
+.category span:last-child {
     color: #000;
     font-weight: 500;
 }

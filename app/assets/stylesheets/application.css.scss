@@ -38,13 +38,44 @@ body {
    background-color: var(--background);
 }
 
+h2 {
+   font-size: 1.5em;
+   width: 100%;
+   margin: 20px auto;
+   text-align: center;
+}
+
 a {
    text-decoration: none;
- }
+}
  
- a:hover {
+a:hover {
    cursor: pointer;
- }
+}
+
+section {
+   width: 92%;
+   margin: 20px auto;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+section div, section li {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 10px;
+   background-color: var(--white);
+}
+
+ul {
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
 
 .addLink {
    position: absolute;
