@@ -26,6 +26,7 @@
  }
 
 .splash > div > a {
+    color: var(--text);
     text-decoration: none;
     padding: 12px 0;
     font-size: 15px;

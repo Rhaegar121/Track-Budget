@@ -16,6 +16,10 @@ header > a {
     text-decoration: none;
 }
 
+.login {
+  font-size: 1.1rem;
+}
+
 .hamburger {
     width: 30px;
     height: 20px;

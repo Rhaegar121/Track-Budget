@@ -12,9 +12,9 @@
   <% if title == "Log In" %>
     <%= link_to icon('fa-solid fa-user-plus'), new_user_registration_path %>
   <% elsif title == "Sign Up" %>
-    <%= link_to "Log In", new_user_session_path %>
+    <%= link_to "Log In", new_user_session_path, class: 'login' %>
   <% else %>
-    <%= link_to icon('fa-solid fa-right-from-bracket'), destroy_user_session_path, method: :delete %>
+    <%= button_to icon('fa-solid fa-right-from-bracket'), destroy_user_session_path, method: :delete %>
   <% end %>
 </header>
 

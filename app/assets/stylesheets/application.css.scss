@@ -19,11 +19,11 @@
 
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Noto Sans JP', sans-serif;
- }
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Noto Sans JP', sans-serif;
+}
 
 :root {
    --text: #434b54;
@@ -31,6 +31,7 @@
    --secondary: #5fb523;
    --background: #e3e3e3;
    --white: #fff;
+   --border: #ccc;
 }
 
 body {
@@ -96,4 +97,18 @@ ul {
    border: 1px solid var(--white);
    background-color: transparent;
    text-align: center;
+}
+
+.sharedLinks {
+   text-align: center;
+   margin-top: 30px;
+}
+
+.sharedLinks a {
+   color: var(--text);
+}
+ 
+.sharedLinks a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
