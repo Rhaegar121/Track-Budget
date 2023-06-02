@@ -13,7 +13,7 @@ class PurchasesController < ApplicationController
   def create
     @category = Category.find(params[:category_id])
     @purchase = @category.purchases.new(purchases_params)
-  
+
     if @purchase.save
       CategoryPurchase.create(category_id: @category.id, purchase_id: @purchase.id)
       redirect_to category_purchases_path(category_id: @category.id), notice: 'Purchase was successfully created.'

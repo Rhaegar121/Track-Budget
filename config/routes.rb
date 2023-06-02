@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
-  
-  authenticated :user do 
+
+  authenticated :user do
     root 'categories#index', as: :authenticated_root
   end
 
-  unauthenticated do 
+  unauthenticated do
     root 'categories#splash', as: :unauthenticated_root
   end
 

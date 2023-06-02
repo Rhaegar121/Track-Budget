@@ -18,8 +18,7 @@ class CategoriesController < ApplicationController
     end
   end
 
-  def splash
-  end
+  def splash; end
 
   private
 
