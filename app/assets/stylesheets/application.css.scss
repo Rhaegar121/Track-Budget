@@ -13,113 +13,112 @@
  *= require_tree .
  *= require_self
  */
- @import "font-awesome";
-
- @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import "font-awesome";
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
-   font-family: 'Noto Sans JP', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 :root {
-   --text: #434b54;
-   --primary: #3778c2;
-   --primary-hover: #2e6baa;
-   --secondary: #5fb523;
-   --secondary-hover: #549625;
-   --background: #e3e3e3;
-   --white: #fff;
-   --border: #ccc;
+  --text: #434b54;
+  --primary: #3778c2;
+  --primary-hover: #2e6baa;
+  --secondary: #5fb523;
+  --secondary-hover: #549625;
+  --background: #e3e3e3;
+  --white: #fff;
+  --border: #ccc;
 }
 
 body {
-   color: var(--text);
-   background-color: var(--background);
+  color: var(--text);
+  background-color: var(--background);
 }
 
 h2 {
-   font-size: 1.5em;
-   width: 100%;
-   margin: 20px auto;
-   text-align: center;
+  font-size: 1.5em;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
 }
 
 a {
-   text-decoration: none;
+  text-decoration: none;
 }
- 
+
 a:hover {
-   cursor: pointer;
+  cursor: pointer;
 }
 
 section {
-   width: 92%;
-   margin: 20px auto;
-   display: flex;
-   flex-direction: column;
-   gap: 15px;
+  width: 92%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-section div, section li {
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 20px 10px;
-   background-color: var(--white);
+section div,
+section li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: var(--white);
 }
 
 ul {
-   list-style: none;
-   display: flex;
-   flex-direction: column;
-   gap: 15px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .btn {
-   position: absolute;
-   bottom: 0;
-   width: 100%;
-   padding: 15px 20px;
-   background-color: var(--secondary);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 20px;
+  background-color: var(--secondary);
 }
 
 .btn:hover {
-   background-color: var(--secondary-hover);
-   cursor: pointer;
+  background-color: var(--secondary-hover);
+  cursor: pointer;
 }
 
 .btn a,
 .btn input[type="submit"] {
-   color: var(--white);
-   font-size: 1.2rem;
-   font-weight: 300;
-   width: 100%;
-   display: block;
-   padding: 15px 0;
-   border: 1px solid var(--white);
-   background-color: transparent;
-   text-align: center;
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 300;
+  width: 100%;
+  display: block;
+  padding: 15px 0;
+  border: 1px solid var(--white);
+  background-color: transparent;
+  text-align: center;
+}
+
+.sharedLinks a {
+  color: var(--primary);
 }
 
 .btn a:hover,
 .btn input[type="submit"]:hover {
-   cursor: pointer;
+  cursor: pointer;
 }
 
 .sharedLinks {
-   text-align: center;
-   margin-top: 30px;
+  text-align: center;
+  margin-top: 30px;
 }
 
-.sharedLinks a {
-   color: var(--primary);
-}
- 
 .sharedLinks a:hover {
   cursor: pointer;
   text-decoration: underline;

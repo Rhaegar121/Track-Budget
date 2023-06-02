@@ -1,13 +1,13 @@
 .category span {
-    color: var(--text);
+  color: var(--text);
 }
 
 .category span:first-child {
-    font-size: 2rem;
-    transform: translateY(-4px);
+  font-size: 2rem;
+  transform: translateY(-4px);
 }
 
 .category span:last-child {
-    color: #000;
-    font-weight: 500;
+  color: #000;
+  font-weight: 500;
 }

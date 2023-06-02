@@ -1,19 +1,19 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0.6rem;
-    width: 100%;
-    height: 3.5rem;
-    font-size: 1.2rem;
-    background-color: var(--primary);
-    color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.6rem;
+  width: 100%;
+  height: 3.5rem;
+  font-size: 1.2rem;
+  background-color: var(--primary);
+  color: var(--white);
 }
 
 header > a {
-    color: var(--white);
-    font-size: 1.5rem;
-    text-decoration: none;
+  color: var(--white);
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 
 .logout {
@@ -28,49 +28,49 @@ header > a {
 }
 
 .hamburger {
-    width: 30px;
-    height: 20px;
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-  }
-  
-  .hamburger span {
-    background-color: var(--white);
-    position: absolute;
-    border-radius: 2px;
-    transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-    width: 100%;
-    height: 4px;
-    transition-duration: 500ms;
-  }
-  
-  .hamburger span:nth-child(1) {
-    top: 0;
-    left: 0;
-  }
-  
-  .hamburger span:nth-child(2) {
-    top: 8px;
-    left: 0;
-    opacity: 1;
-  }
-  
-  .hamburger span:nth-child(3) {
-    bottom: 0;
-    left: 0;
-  }
-  
-  .hamburger.open span:nth-child(1) {
-    transform: rotate(45deg);
-    top: 8px;
-  }
-  
-  .hamburger.open span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .hamburger.open span:nth-child(3) {
-    transform: rotate(-45deg);
-    top: 8px;
-  }
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.hamburger span {
+  background-color: var(--white);
+  position: absolute;
+  border-radius: 2px;
+  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  width: 100%;
+  height: 4px;
+  transition-duration: 500ms;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.hamburger span:nth-child(2) {
+  top: 8px;
+  left: 0;
+  opacity: 1;
+}
+
+.hamburger span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 8px;
+}

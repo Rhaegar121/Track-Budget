@@ -1,13 +1,13 @@
 .notice {
-    width: 100%;
-    text-align: center;
-    color: green;
-    margin: 10px auto;
+  width: 100%;
+  text-align: center;
+  color: green;
+  margin: 10px auto;
 }
-  
+
 .alert {
-    width: 100%;
-    text-align: center;
-    color: red;
-    margin: 10px auto;
+  width: 100%;
+  text-align: center;
+  color: red;
+  margin: 10px auto;
 }
