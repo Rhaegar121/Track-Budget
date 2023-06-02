@@ -30,5 +30,5 @@ production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
   database: TrackBudget_production
-  username: <%= ENV['POSTGRESQL_USER'] %>
-  password: <%= ENV['POSTGRESQL_PASSWORD'] %>
+  username: TrackBudget
+  password: <%= ENV["TRACKBUDGET_DATABASE_PASSWORD"] %>
