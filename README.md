@@ -52,7 +52,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
+- [Live Demo Link](https://track-budget.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,6 +157,14 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support <a name="support"></a>
 
 Give a ⭐️ if you like this project!
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+This replica was originally designed by <a href="https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=">Gregoire Vella in Behance</a>. Checkout Gregoire Vella's design <a href="https://www.behance.net/gregoirevella">here</a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
