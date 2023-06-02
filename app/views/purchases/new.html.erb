@@ -1,0 +1,17 @@
+<%= render 'shared/header', title: "add purchase", back: category_purchases_path %>
+
+<%= form_with model: @purchase, url: category_purchases_path do |f| %>
+    <div>
+        <%= f.label :name, "Name:" %>
+        <%= f.text_field :name, required: true %>
+    </div>
+
+    <div>
+        <%= f.label :amount, "Amount in USD:" %>
+        <%= f.number_field :amount, placeholder: '0', required: true %>
+    </div>
+
+    <div class="btn">
+        <%= f.submit "Create Purchase" %>
+    </div>
+<% end %>

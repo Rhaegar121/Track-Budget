@@ -1,0 +1,21 @@
+<header>
+  <% if back %>
+    <%= link_to icon('fa-solid fa-chevron-left'), back %>
+  <% else %>
+    <div class="hamburger">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+  <% end %>
+  <%= title.upcase %>
+  <% if title == "Log In" %>
+    <%= link_to icon('fa-solid fa-user-plus'), new_user_registration_path %>
+  <% elsif title == "Sign Up" %>
+    <%= link_to "Log In", new_user_session_path, class: 'login' %>
+  <% else %>
+    <%= button_to icon('fa-solid fa-right-from-bracket'), destroy_user_session_path, method: :delete, class: "logout" %>
+  <% end %>
+</header>
+
+<%= render 'shared/flash' %>

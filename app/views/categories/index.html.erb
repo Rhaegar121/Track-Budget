@@ -1,0 +1,23 @@
+<%= render 'shared/header', title: "categories", back: false %>
+
+<% if @categories.empty? %>
+    <h2>No category found</h2>
+<% else %>
+    <section>
+        <ul>
+            <% @categories.each do |category| %>
+                <%= link_to category_purchases_path(category.id) do %>
+                    <li class="category">
+                        <span><%= category.icon %></span>
+                        <span><%= category.name %></span>
+                        <span><%= number_to_currency(category.total) %></span>
+                    </li>
+                <% end %>
+            <% end %>
+        </ul>
+    </section>
+<% end %>
+
+<div class="btn">
+    <%= link_to "Add Category", new_category_path %>
+</div>
