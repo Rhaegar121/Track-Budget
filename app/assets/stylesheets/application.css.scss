@@ -28,7 +28,9 @@
 :root {
    --text: #434b54;
    --primary: #3778c2;
+   --primary-hover: #2e6baa;
    --secondary: #5fb523;
+   --secondary-hover: #549625;
    --background: #e3e3e3;
    --white: #fff;
    --border: #ccc;
@@ -86,6 +88,11 @@ ul {
    background-color: var(--secondary);
 }
 
+.btn:hover {
+   background-color: var(--secondary-hover);
+   cursor: pointer;
+}
+
 .btn a,
 .btn input[type="submit"] {
    color: var(--white);
@@ -99,13 +106,18 @@ ul {
    text-align: center;
 }
 
+.btn a:hover,
+.btn input[type="submit"]:hover {
+   cursor: pointer;
+}
+
 .sharedLinks {
    text-align: center;
    margin-top: 30px;
 }
 
 .sharedLinks a {
-   color: var(--text);
+   color: var(--primary);
 }
  
 .sharedLinks a:hover {

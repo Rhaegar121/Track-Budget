@@ -37,3 +37,12 @@
     background-color: var(--primary);
     color: var(--white);
 }
+
+.splash > div > a:first-child:hover {
+    background-color: var(--primary-hover);
+}
+
+.splash > div > a:last-child:hover {
+    background-color: var(--secondary);
+    color: var(--white);
+}
