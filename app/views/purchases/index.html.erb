@@ -2,17 +2,17 @@
 
 <% if @purchases.empty? %>
     <section>
-        <div>
+        <div class="delete">
             <span>Delete this category: </span>
-            <%= button_to icon('fa-regular fa-trash-can'), category_path(@category), method: :delete, class: 'delBtn' %>
+            <%= button_to icon('fa-solid fa-trash'), category_path(@category), method: :delete, class: 'delBtn' %>
         </div>
         <h2>No purchase found for this category.</h2>
     </section>
 <% else %>
     <section>
-        <div>
+        <div class="delete">
             <span>Delete this category: </span>
-            <%= button_to icon('fa-regular fa-trash-can'), category_path(@category), method: :delete, class: 'delBtn' %>
+            <%= button_to icon('fa-solid fa-trash'), category_path(@category), method: :delete, class: 'delBtn' %>
         </div>
         <div>
             <span>Total amount: </span>
