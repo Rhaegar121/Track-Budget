@@ -117,8 +117,21 @@
   border-bottom: 1px solid var(--border);
 }
 
+.sideMenu ul li form {
+  width: 80%;
+  padding: 20px 0;
+}
+
+.sideMenu ul li button {
+  color: var(--white);
+  font-size: 1rem;
+  border: none;
+  background: none;
+}
+
 .sideMenu ul li:hover,
 .sideMenu ul li:active {
+  cursor: pointer;
   background-color: var(--primary-hover);
 }
 
