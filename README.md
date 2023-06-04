@@ -9,7 +9,6 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
     - [🚀 Live Demo](#live-demo)
-    - [🚀 Video Demo](#video-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -54,14 +53,6 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://track-budget.onrender.com/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- VideoDEMO -->
-
-## 🚀 Video Demo <a name="video-demo"></a>
-
-- [Project Description Video Link](https://www.loom.com/share/b0b6746f3c5a405d986fa9e2a2d7a72b)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
