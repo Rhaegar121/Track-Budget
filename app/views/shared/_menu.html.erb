@@ -1,0 +1,26 @@
+<% if user_signed_in? %>
+<nav class="sideMenu">
+  <div class="userInfo">
+    <i class="fa-solid fa-circle-user"></i>
+    <p><%= current_user.name %></p>
+  </div>
+  <ul>
+    <li>
+      <i class="fa-solid fa-cog"></i>
+      <%= link_to "Acount Settings" %>
+    </li>
+    <li>
+      <i class="fa-solid fa-code"></i>
+      <%= link_to "Source Code", "https://github.com/Rhaegar121/Track-Budget" %>
+    </li>
+    <li>
+      <i class="fa-brands fa-github"></i>
+      <%= link_to "Author Profile", "https://github.com/Rhaegar121" %>
+    </li>
+    <li>
+      <i class="fa-solid fa-sign-out"></i>
+      <%= button_to "Log out", destroy_user_session_path, method: :delete %>
+    </li>
+  </ul>
+</nav>
+<% end %>

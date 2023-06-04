@@ -1,10 +1,20 @@
 <%= render 'shared/header', title: "Purchases", back: categories_path %>
 
 <% if @purchases.empty? %>
-    <h2>No purchase found for this category.</h2>
+    <section>
+        <div>
+            <span>Delete this category: </span>
+            <%= button_to icon('fa-regular fa-trash-can'), category_path(@category), method: :delete, class: 'delBtn' %>
+        </div>
+        <h2>No purchase found for this category.</h2>
+    </section>
 <% else %>
     <section>
-        <div class="totalPurchase">
+        <div>
+            <span>Delete this category: </span>
+            <%= button_to icon('fa-regular fa-trash-can'), category_path(@category), method: :delete, class: 'delBtn' %>
+        </div>
+        <div>
             <span>Total amount: </span>
             <span><%= number_to_currency(@total) %></span>
         </div>
@@ -14,7 +24,7 @@
         </div>
         <ul>
             <% @purchases.each do |purchase| %>
-                <li class="purchase">
+                <li>
                     <span><%= purchase.name %></span>
                     <span><%= number_to_currency(purchase.amount) %></span>
                 </li>

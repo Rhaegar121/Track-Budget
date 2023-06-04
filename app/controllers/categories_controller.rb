@@ -18,6 +18,15 @@ class CategoriesController < ApplicationController
     end
   end
 
+  def destroy
+    @category = Category.find(params[:id])
+    if @category.destroy
+      redirect_to categories_path, notice: 'Category was successfully deleted.'
+    else
+      redirect_to new_category_path, alert: 'Category was not deleted.'
+    end
+  end
+
   def splash; end
 
   private
