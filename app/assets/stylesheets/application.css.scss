@@ -97,10 +97,12 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-bottom: 84px;
 }
 
 .btn {
-  position: absolute;
+  position: fixed;
+  bottom: 0;
   width: 100%;
   padding: 15px 20px;
   background-color: var(--secondary);
