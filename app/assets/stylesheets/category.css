@@ -3,7 +3,7 @@
 }
 
 .category:hover,
-.category:active {
+.category:focus {
   transform: scale(1.05);
 }
 
