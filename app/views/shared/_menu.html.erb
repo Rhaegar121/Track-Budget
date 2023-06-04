@@ -1,16 +1,26 @@
 <% if user_signed_in? %>
 <nav class="sideMenu">
-  <div>
+  <div class="userInfo">
     <i class="fa-solid fa-circle-user"></i>
     <p><%= current_user.name %></p>
   </div>
   <ul>
     <li>
-      <%= icon("fa-solid fa-user-plus") %>
-      <%= link_to icon('fa-solid fa-user'), edit_user_registration_path %>
+      <i class="fa-solid fa-cog"></i>
+      <%= link_to "Acount Settings" %>
     </li>
-    <li><%= link_to icon('fa-solid fa-cog'), edit_user_registration_path %></li>
-    <li><%= link_to icon('fa-solid fa-sign-out'), destroy_user_session_path, method: :delete %></li>
+    <li>
+      <i class="fa-solid fa-code"></i>
+      <%= link_to "Source Code", edit_user_registration_path %>
+    </li>
+    <li>
+      <i class="fa-brands fa-github"></i>
+      <%= link_to "Author Profile", edit_user_registration_path %>
+    </li>
+    <li>
+      <i class="fa-solid fa-sign-out"></i>
+      <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+    </li>
   </ul>
 </nav>
 <% end %>

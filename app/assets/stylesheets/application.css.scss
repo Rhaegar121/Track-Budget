@@ -34,27 +34,29 @@
   --border: #ccc;
 }
 
+html,
 body {
   color: var(--text);
+  height: 100%;
 }
 
 .st-container {
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
 
 .main {
+  height: 100%;
   background-color: var(--background);
   overflow-y: scroll;
   position: relative;
-  left: 0;
-	z-index: 99;
 	-webkit-transition: -webkit-transform 0.5s;
 	transition: transform 0.5s;
 }
 
 .transform {
-  transform: translate3d(300px, 0, 0);
+  transform: translate3d(270px, 0, 0);
 }
 
 h2 {

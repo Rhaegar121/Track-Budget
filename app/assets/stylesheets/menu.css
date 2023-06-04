@@ -52,17 +52,77 @@
   left: 0;
   z-index: 100;
   width: 0;
-  height: 100vh;
-  background: #48a770;
+  height: 100%;
+  overflow: hidden;
   -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  visibility: hidden;
+  background: #1d4a7f;
+  background: linear-gradient(-90deg, #1d4a7f 0%, rgba(39, 98, 164, 0.749) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #1d4a7f 0%,
+    rgba(39, 98, 164, 0.749) 100%
+  );
 }
 
 .width {
-  width: 300px;
-  visibility: visible;
+  width: 270px;
 	-webkit-transition: -webkit-transform 0.5s;
 	transition: transform 0.5s;
 }
 
+.userInfo {
+  margin: 30px auto;
+  text-align: center;
+  color: var(--white);
+}
+
+.userInfo .fa-circle-user {
+  font-size: 5rem;
+}
+
+.userInfo p {
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+
+.sideMenu ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.sideMenu ul li {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.sideMenu ul li i {
+  width: 15%;
+  font-size: 1rem;
+  padding: 10px;
+  color: var(--border);
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.sideMenu ul li a {
+  width: 80%;
+  color: var(--white);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.sideMenu ul li:hover,
+.sideMenu ul li:active {
+  background-color: var(--primary-hover);
+}
+
+.sideMenu ul li:hover a,
+.sideMenu ul li:active a {
+  border-bottom: none;
+}
