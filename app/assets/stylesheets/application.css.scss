@@ -32,6 +32,8 @@
   --background: #e3e3e3;
   --white: #fff;
   --border: #ccc;
+  --red: #f00;
+  --red-hover: #e60000;
 }
 
 html,
@@ -126,16 +128,23 @@ ul {
   text-align: center;
 }
 
+.delete {
+  color: var(--red);
+}
+
 .delBtn {
   border: none;
   background: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  transition: transform 0.3s;
+  color: var(--red);
 }
 
 .delBtn:hover,
 .delBtn:active {
-  color: red;
+  color: var(--red-hover);
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .sharedLinks a {
