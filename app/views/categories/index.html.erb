@@ -6,7 +6,7 @@
     <section>
         <ul>
             <% @categories.each do |category| %>
-                <%= link_to category_purchases_path(category.id) do %>
+                <%= link_to category_purchases_path(category.id), class: 'categoryLinks' do %>
                     <li class="category">
                         <span><%= category.icon %></span>
                         <span><%= category.name %></span>

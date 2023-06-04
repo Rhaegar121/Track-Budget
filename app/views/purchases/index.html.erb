@@ -4,7 +4,7 @@
     <h2>No purchase found for this category.</h2>
 <% else %>
     <section>
-        <div class="totalPurchase">
+        <div>
             <span>Total amount: </span>
             <span><%= number_to_currency(@total) %></span>
         </div>
@@ -14,7 +14,7 @@
         </div>
         <ul>
             <% @purchases.each do |purchase| %>
-                <li class="purchase">
+                <li>
                     <span><%= purchase.name %></span>
                     <span><%= number_to_currency(purchase.amount) %></span>
                 </li>
