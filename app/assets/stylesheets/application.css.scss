@@ -126,6 +126,18 @@ ul {
   text-align: center;
 }
 
+.delBtn {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+}
+
+.delBtn:hover,
+.delBtn:active {
+  color: red;
+  cursor: pointer;
+}
+
 .sharedLinks a {
   color: var(--primary);
 }
