@@ -36,7 +36,25 @@
 
 body {
   color: var(--text);
+}
+
+.st-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.main {
   background-color: var(--background);
+  overflow-y: scroll;
+  position: relative;
+  left: 0;
+	z-index: 99;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.transform {
+  transform: translate3d(300px, 0, 0);
 }
 
 h2 {
