@@ -51,10 +51,12 @@
   top: 0;
   left: 0;
   z-index: 100;
-  width: 0;
+  width: 270px;
   height: 100%;
+  transform: translate3d(-270px, 0, 0);
   overflow: hidden;
-  -webkit-transition: all 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
   background: #1d4a7f;
   background: linear-gradient(-90deg, #1d4a7f 0%, rgba(39, 98, 164, 0.749) 100%);
   background: -webkit-linear-gradient(
@@ -65,9 +67,7 @@
 }
 
 .width {
-  width: 270px;
-	-webkit-transition: -webkit-transform 0.5s;
-	transition: transform 0.5s;
+  transform: translate3d(0, 0, 0);
 }
 
 .userInfo {
