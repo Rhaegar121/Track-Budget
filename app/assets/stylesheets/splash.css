@@ -1,17 +1,17 @@
 .splash {
   position: relative;
   height: 100vh;
+  background-color: var(--white);
 }
 
-h1 {
-  font-family: 'Courgette', cursive;
-  font-size: 3rem;
-  width: 100%;
-  text-align: center;
+.logo {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
 }
 
 .splash > div {
