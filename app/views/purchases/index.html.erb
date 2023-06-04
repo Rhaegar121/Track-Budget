@@ -1,9 +1,19 @@
 <%= render 'shared/header', title: "Purchases", back: categories_path %>
 
 <% if @purchases.empty? %>
-    <h2>No purchase found for this category.</h2>
+    <section>
+        <div>
+            <span>Delete this category: </span>
+            <%= button_to icon('fa-solid fa-trash'), category_path(@category), method: :delete %>
+        </div>
+        <h2>No purchase found for this category.</h2>
+    </section>
 <% else %>
     <section>
+        <div>
+            <span>Delete this category: </span>
+            <%= button_to icon('fa-solid fa-trash'), category_path(@category), method: :delete %>
+        </div>
         <div>
             <span>Total amount: </span>
             <span><%= number_to_currency(@total) %></span>
