@@ -80,9 +80,8 @@ section {
   gap: 15px;
   background-image: url('background.png');
   background-size: cover;
-  // background-blend-mode: multiply;
-  // background-color: var(--border);
-  // backdrop-filter: grayscale(100%) contrast(1);
+  background-blend-mode: multiply;
+  backdrop-filter: grayscale(100%) contrast(1);
 }
 
 section div,
@@ -93,7 +92,7 @@ section li {
   align-items: center;
   padding: 20px 10px;
   background-color: var(--white);
-  border: 1px solid var(--border);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 ul {
@@ -132,7 +131,6 @@ ul {
 
 .delete {
   color: var(--red);
-  border: 1px solid var(--red);
 }
 
 .delBtn {
