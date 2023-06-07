@@ -1,13 +1,18 @@
-form > div {
+article {
   width: 88%;
+  height: 80vh;
   margin: 0 auto;
+  background-image: url('background.png');
+  background-size: cover;
+  background-blend-mode: multiply;
+  backdrop-filter: grayscale(100%) contrast(1);
 }
 
 form input[type="text"],
 form input[type="email"],
 form input[type="password"],
-form select,
-form textarea {
+form input[type="number"],
+form select {
   width: 100%;
   height: 55px;
   font-size: 0.92rem;
@@ -19,8 +24,8 @@ form textarea {
 form input[type="text"]:focus,
 form input[type="email"]:focus,
 form input[type="password"]:focus,
-form select:focus,
-form textarea:focus {
+form input[type="number"]:focus,
+form select:focus {
   background-color: transparent;
   border-bottom: 1px solid var(--text);
 }
@@ -28,8 +33,8 @@ form textarea:focus {
 form input[type="text"]::placeholder,
 form input[type="email"]::placeholder,
 form input[type="password"]::placeholder,
-form select::placeholder,
-form textarea::placeholder {
+form input[type="number"]::placeholder,
+form select::placeholder {
   font-size: 0.92rem;
 }
 

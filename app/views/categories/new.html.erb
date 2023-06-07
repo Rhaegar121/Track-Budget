@@ -1,40 +1,40 @@
 <%= render 'shared/header', title: "add category", back: categories_path %>
 
 <%= form_with model: @category do |f| %>
-    <div>
-        <%= f.label :name, "Category name:" %>
-        <%= f.text_field :name, required: true %>
-    </div>
+    <article>
+        <div>
+            <%= f.text_field :name, placeholder: "Category name: ", required: true %>
+        </div>
 
-    <% options = [  ["🍔 Foods", "🍔"],
-                    ["🍷 Drinks", "🍷"],
-                    ["☕ Coffee", "☕"],
-                    ["🛒 Groceries", "🛒"],
-                    ["🚌 Tranportation", "🚌"],
-                    ["🐕 Pets", "🐕"],
-                    ["🎬 Entertainment", "🎬"],
-                    ["📚 Books", "📚"],
-                    ["💻 Tech Accessories", "💻"],
-                    ["👓 Glasses", "👓"],
-                    ["⌚ Watch", "⌚"],
-                    ["👔 Men Clothing", "👔"],
-                    ["👗 Women Clothing", "👗"],
-                    ["👖 Jeans", "👖"],
-                    ["👟 Shoes", "👟"],
-                    ["👠 High Heels", "👠"],
-                    ["👙 Bikini", "👙"],
-                    ["🎁 Gift", "🎁"],
-                    ["💊 Medicine", "💊"],
-                    ["💡 Electric Bill", "💡"],
-                    ["💄 Cosmetics", "💄"],
-                    ["🧾 Others", "🧾"],
-                  ] %>
+        <% options = [  ["🍔 Foods", "🍔"],
+                        ["🍷 Drinks", "🍷"],
+                        ["☕ Coffee", "☕"],
+                        ["🛒 Groceries", "🛒"],
+                        ["🚌 Tranportation", "🚌"],
+                        ["🐕 Pets", "🐕"],
+                        ["🎬 Entertainment", "🎬"],
+                        ["📚 Books", "📚"],
+                        ["💻 Tech Accessories", "💻"],
+                        ["👓 Glasses", "👓"],
+                        ["⌚ Watch", "⌚"],
+                        ["👔 Men Clothing", "👔"],
+                        ["👗 Women Clothing", "👗"],
+                        ["👖 Jeans", "👖"],
+                        ["👟 Shoes", "👟"],
+                        ["👠 High Heels", "👠"],
+                        ["👙 Bikini", "👙"],
+                        ["🎁 Gift", "🎁"],
+                        ["💊 Medicine", "💊"],
+                        ["💡 Electric Bill", "💡"],
+                        ["💄 Cosmetics", "💄"],
+                        ["🧾 Others", "🧾"],
+                    ] %>
 
-   <div>
-        <%= f.label :icon, "Select an icon:" %>
-        <%= f.select :icon, options_for_select(options, selected: @category.icon), {prompt: "Select an icon" } %>
-  </div>
+        <div>
+            <%= f.select :icon, options_for_select(options, selected: @category.icon), {prompt: "Select an icon: " } %>
+        </div>
 
+    </article>
     <div class="btn">
         <%= f.submit "Create Category" %>
     </div>
