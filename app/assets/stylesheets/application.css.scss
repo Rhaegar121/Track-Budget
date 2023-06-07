@@ -51,8 +51,6 @@ body {
   position: relative;
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  background-image: url('background.png');
-  background-size: cover;
 }
 
 .transform {
@@ -80,6 +78,11 @@ section {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  background-image: url('background.png');
+  background-size: cover;
+  // background-blend-mode: multiply;
+  // background-color: var(--border);
+  // backdrop-filter: grayscale(100%) contrast(1);
 }
 
 section div,
@@ -159,6 +162,10 @@ ul {
 .sharedLinks {
   text-align: center;
   margin-top: 30px;
+}
+
+.sharedLinks a {
+  margin-bottom: 8px;
 }
 
 .sharedLinks a:hover {
