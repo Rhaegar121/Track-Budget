@@ -24,10 +24,13 @@
         </div>
         <ul>
             <% @purchases.each do |purchase| %>
-                <li>
+                <li class="purchase">
                     <span><%= purchase.name %></span>
-                    <span><%= purchase.created_at %></span>
                     <span><%= number_to_currency(purchase.amount) %></span>
+                    <span class="date">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <%= purchase.created_at %>
+                    </span>
                 </li>
             <% end %>
         </ul>

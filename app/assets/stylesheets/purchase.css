@@ -1,0 +1,12 @@
+.purchase {
+    position: relative;
+    padding-bottom: 40px;
+}
+  
+.purchase .date {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    font-size: 0.8rem;
+    color: #999999;
+}
