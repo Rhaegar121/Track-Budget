@@ -2,12 +2,12 @@
   width: 100%;
   text-align: center;
   color: var(--secondary);
-  margin: 10px auto;
+  margin: 6px auto;
 }
 
 .alert {
   width: 100%;
   text-align: center;
   color: var(--red);
-  margin: 10px auto;
+  margin: 6px auto;
 }
