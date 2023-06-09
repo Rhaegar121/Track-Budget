@@ -1,7 +1,7 @@
 .intro {
   display: block;
-  margin: 25px auto;
-  padding: 30px 20px;
+  margin: 0px auto 25px auto;
+  padding: 20px;
   border-radius: 20px;
   border: 1px solid var(--text);
   background-color: #afe687c7;
@@ -22,7 +22,8 @@ h3::after {
 }
 
 .intro p {
-  line-height: 1.5;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 .intro > span {
@@ -41,7 +42,7 @@ h3::after {
 .fa-hand-point-down {
   width: 100%;
   font-size: 1.8rem;
-  margin: 15px auto 0 auto;
+  margin: 10px auto 0 auto;
   text-align: center;
   animation-name: floating;
   animation-duration: 2.5s;
