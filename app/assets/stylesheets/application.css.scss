@@ -152,6 +152,7 @@ ul {
 
 .sharedLinks a {
   color: var(--primary);
+  margin-bottom: 8px;
 }
 
 .btn a:hover,
@@ -162,10 +163,6 @@ ul {
 .sharedLinks {
   text-align: center;
   margin-top: 30px;
-}
-
-.sharedLinks a {
-  margin-bottom: 8px;
 }
 
 .sharedLinks a:hover {

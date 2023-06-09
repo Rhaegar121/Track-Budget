@@ -1,6 +1,6 @@
 .intro {
   display: block;
-  margin: 30px auto;
+  margin: 25px auto;
   padding: 30px 20px;
   border-radius: 20px;
   border: 1px solid var(--text);
@@ -25,8 +25,8 @@ h3::after {
   line-height: 1.5;
 }
 
-.intro p > span {
-  color: var(--white);
+.intro > span {
+  display: block;
 }
 
 .intro p::after {
@@ -36,10 +36,6 @@ h3::after {
   height: 1px;
   width: 100%;
   margin: 10px 0;
-}
-
-.intro > span {
-  display: block;
 }
 
 .fa-hand-point-down {
@@ -54,9 +50,9 @@ h3::after {
 }
 
 @keyframes floating {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, 7px); }
-  100%   { transform: translate(0, -0px); }   
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(0, 7px); }
+  100% { transform: translate(0, -0); }
 }
 
 .category {
@@ -70,6 +66,10 @@ h3::after {
 
 .category span {
   color: var(--text);
+}
+
+.intro p > span {
+  color: var(--white);
 }
 
 .category span:first-child {
