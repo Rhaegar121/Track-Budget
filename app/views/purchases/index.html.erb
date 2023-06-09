@@ -26,6 +26,7 @@
             <% @purchases.each do |purchase| %>
                 <li>
                     <span><%= purchase.name %></span>
+                    <span><%= purchase.created_at %></span>
                     <span><%= number_to_currency(purchase.amount) %></span>
                 </li>
             <% end %>

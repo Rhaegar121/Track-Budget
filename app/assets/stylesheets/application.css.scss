@@ -74,14 +74,16 @@ a:hover {
 
 section {
   width: 92%;
+  height: 74vh;
+  overflow-y: scroll;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
   gap: 15px;
   background-image: url('background.png');
-  background-size: cover;
-  background-blend-mode: multiply;
-  backdrop-filter: grayscale(100%) contrast(1);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: center;
 }
 
 section div,
@@ -100,7 +102,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-bottom: 84px;
+  margin-bottom: 15px;
 }
 
 .btn {

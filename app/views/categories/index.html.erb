@@ -1,7 +1,15 @@
 <%= render 'shared/header', title: "categories", back: false %>
 
 <% if @categories.empty? %>
-    <h2>No category found</h2>
+    <section>
+        <div class="intro">
+            <h3>Getting started?</h3>
+            <p>TrackBudget is a simple app to track your budget. You can add categories to see how much you spent for that category by clicking <span>Add Category</span> button.</p>
+            <p>When you click the category after you added, you can see the total purchases for that category and if you don't have any purchases yet, you can add purchase items by clicking <span>Add Purchase</span> button.</p>
+            <span>Let's start by adding your first category.</span>
+            <i class="fa-regular fa-hand-point-down"></i>
+        </div>
+    </section>
 <% else %>
     <section>
         <ul>
