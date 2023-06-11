@@ -62,7 +62,8 @@ h3::after {
 
 .category:hover,
 .category:focus {
-  transform: scale(1.05);
+  box-shadow: none;
+  border-bottom: 2px solid var(--primary);
 }
 
 .category span {
