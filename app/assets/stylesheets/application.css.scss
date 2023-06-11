@@ -133,16 +133,13 @@ ul {
   text-align: center;
 }
 
-.delete {
-  color: var(--red);
-}
-
 .delBtn {
   border: none;
   background: none;
   font-size: 1.4rem;
   transition: transform 0.3s;
   color: var(--red);
+  padding-left: 10px;
 }
 
 .delBtn:hover,
