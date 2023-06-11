@@ -23,6 +23,10 @@ header > a {
   font-size: 1.5rem;
 }
 
+.fa-right-from-bracket:hover {
+  cursor: pointer;
+}
+
 .login {
   font-size: 1.1rem;
 }

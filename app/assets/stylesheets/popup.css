@@ -1,4 +1,5 @@
 .popup {
+    display: none;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -9,6 +10,10 @@
     background: var(--white);
     border: 1px solid var(--border);
     border-radius: 10px;
+}
+
+.popup.show {
+    display: block;
 }
 
 .popup p {
