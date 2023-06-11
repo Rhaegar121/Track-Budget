@@ -9,7 +9,7 @@
 
 .purchase {
   position: relative;
-  padding-bottom: 40px;
+  padding: 15px 10px 45px 10px;
 }
 
 .purchase .date {
@@ -18,6 +18,22 @@
   left: 10px;
   font-size: 0.8rem;
   color: #999;
+}
+
+.purchase .purchase-del {
+  position: absolute;
+  bottom: 15px;
+  right: 10px; 
+}
+
+.purchase .purchase-del .delBtn {
+  font-size: 1.3rem;
+  color: #999;
+}
+
+.purchase .purchase-del .delBtn:hover,
+.purchase .purchase-del .delBtn:focus {
+  color: var(--red-hover);
 }
 
 .total-amount {
