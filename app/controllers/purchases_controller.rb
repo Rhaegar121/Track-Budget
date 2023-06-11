@@ -23,6 +23,17 @@ class PurchasesController < ApplicationController
     end
   end
 
+  def destroy
+    @category = Category.find(params[:category_id])
+    @purchase = @category.purchases.find(params[:id])
+
+    if @purchase.destroy
+      redirect_to category_purchases_path(category_id: @category.id), notice: 'Purchase was successfully deleted.'
+    else
+      redirect_to category_purchases_path(category_id: @category.id), alert: 'Purchase was not deleted.'
+    end
+  end
+
   private
 
   def purchases_params

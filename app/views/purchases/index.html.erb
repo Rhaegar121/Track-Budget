@@ -25,6 +25,7 @@
                         <i class="fa-solid fa-calendar-days"></i>
                         <%= purchase.created_at.strftime('%d-%m-%Y') %>
                     </span>
+                    <%= button_to icon('fa-solid fa-trash'), category_purchase_path(@category, purchase), method: :delete, class: 'delBtn purchase-del' %>
                 </li>
             <% end %>
         </ul>

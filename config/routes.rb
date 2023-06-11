@@ -10,6 +10,6 @@ Rails.application.routes.draw do
   end
 
   resources :categories, only: %i[index new show create destroy] do
-    resources :purchases, only: %i[index new create]
+    resources :purchases, only: %i[index new create destroy]
   end
 end
