@@ -56,10 +56,6 @@ h3::after {
   100% { transform: translate(0, -0); }
 }
 
-.category {
-  transition: transform 0.3s;
-}
-
 .category:hover,
 .category:focus {
   box-shadow: none;

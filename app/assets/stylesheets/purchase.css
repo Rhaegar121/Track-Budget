@@ -1,3 +1,12 @@
+.purchase-category span:first-child {
+  font-size: 2rem;
+  transform: translateY(-4px);
+}
+
+.purchase-ul {
+  margin-bottom: 0;
+}
+
 .purchase {
   position: relative;
   padding-bottom: 40px;
@@ -9,4 +18,9 @@
   left: 10px;
   font-size: 0.8rem;
   color: #999;
+}
+
+.total-amount {
+  font-weight: 600;
+  padding: 30px 10px;
 }

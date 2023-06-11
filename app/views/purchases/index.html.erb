@@ -10,30 +10,27 @@
     </section>
 <% else %>
     <section>
-        <div class="delete">
-            <span>Delete this category: </span>
-            <%= button_to icon('fa-solid fa-trash'), category_path(@category), method: :delete, class: 'delBtn' %>
-        </div>
-        <div>
-            <span>Total amount: </span>
-            <span><%= number_to_currency(@total) %></span>
-        </div>
-        <div class="category">
+        <div class="purchase-category">
             <span><%= @category.icon %></span>
             <span><%= @category.name %></span>
+            <%= button_to icon('fa-solid fa-trash'), category_path(@category), method: :delete, class: 'delBtn' %>
         </div>
-        <ul>
+        <ul class="purchase-ul">
             <% @purchases.each do |purchase| %>
                 <li class="purchase">
                     <span><%= purchase.name %></span>
                     <span><%= number_to_currency(purchase.amount) %></span>
                     <span class="date">
                         <i class="fa-solid fa-calendar-days"></i>
-                        <%= purchase.created_at %>
+                        <%= purchase.created_at.strftime('%d-%m-%Y') %>
                     </span>
                 </li>
             <% end %>
         </ul>
+        <div class="total-amount">
+            <span>Total amount: </span>
+            <span><%= number_to_currency(@total) %></span>
+        </div>
     </section>
 <% end %>
 
