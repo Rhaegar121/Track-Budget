@@ -14,8 +14,9 @@
   <% elsif title == "Sign Up" %>
     <%= link_to "Log In", new_user_session_path, class: 'login' %>
   <% else %>
-    <%= button_to icon('fa-solid fa-right-from-bracket'), destroy_user_session_path, method: :delete, class: "logout" %>
+    <i class="fa-solid fa-right-from-bracket"></i>
   <% end %>
 </header>
 
 <%= render 'shared/flash' %>
+<%= render 'shared/popup' %>

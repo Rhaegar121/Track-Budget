@@ -1,0 +1,67 @@
+.popup {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    width: 270px;
+    text-align: center;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.popup p {
+    font-size: 1.15rem;
+    padding: 15px;
+    border-bottom: 1px solid var(--border);
+}
+
+.popupBtn {
+    width: 100%;
+    height: 41px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.popupBtn button {
+    border: none;
+    background: none;
+    font-size: 1.1rem;
+}
+
+.popupBtn button:first-child {
+    border-right: 1px solid var(--border);
+}
+
+.confirm {
+    color: var(--secondary);
+}
+
+.confirm:hover {
+    cursor: pointer;
+    color: var(--secondary-hover);
+}
+
+.confirm::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 100%;
+    background: var(--border);
+}
+
+.cancel {
+    color: var(--red);
+}
+
+.cancel:hover {
+    cursor: pointer;
+    color: var(--red-hover);
+}

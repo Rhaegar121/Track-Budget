@@ -1,0 +1,7 @@
+<div class="popup">
+    <p>Log out of your account?</p>
+    <div class="popupBtn">
+        <%= button_to "Confirm", destroy_user_session_path, method: :delete, class: "confirm" %>
+        <button class="cancel">Cancel</button>
+    </div>
+</div>

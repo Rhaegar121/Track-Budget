@@ -16,7 +16,7 @@ header > a {
   text-decoration: none;
 }
 
-.logout {
+.fa-right-from-bracket {
   border: none;
   background: none;
   color: var(--white);
