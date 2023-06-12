@@ -23,6 +23,12 @@
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+}
+
 :root {
   --text: #434b54;
   --primary: #3778c2;
@@ -34,12 +40,6 @@
   --border: #ccc;
   --red: #f00;
   --red-hover: #cc0202;
-}
-
-::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-  background-color: transparent;
 }
 
 html,
