@@ -46,3 +46,9 @@
   background-color: var(--secondary);
   color: var(--white);
 }
+
+@media screen and (min-width: 992px) {
+  .splash > div {
+    width: 40%;
+  }
+}
