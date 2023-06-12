@@ -30,3 +30,10 @@ header > a {
 .login {
   font-size: 1.1rem;
 }
+
+/* @media screen and (min-width: 992px) {
+  header {
+    width: 50%;
+    margin: 0 auto;
+  }
+} */

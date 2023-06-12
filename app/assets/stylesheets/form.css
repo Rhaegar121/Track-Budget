@@ -8,6 +8,11 @@ article {
   backdrop-filter: grayscale(100%) contrast(1);
 }
 
+.field {
+  width: 88%;
+  margin: 0 auto;
+}
+
 form input[type="text"],
 form input[type="email"],
 form input[type="password"],
