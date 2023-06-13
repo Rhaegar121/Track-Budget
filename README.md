@@ -22,7 +22,21 @@
 
 # 📖 Track Budget <a name="about-project"></a>
 
-> Track Budget is a mobile web application where you can manage your budget: you have a list of purchases associated with a category, so that you can see how much money you spent and on what.
+<div align="center">
+  <img src="trackbudget.png" alt="project sample" width="650"  height="auto" />
+  <br/>
+  <img src="track budget screenshot 1.png" alt="project sample" width="650"  height="auto" />
+  <br/>
+  <img src="track budget screenshot 2.png" alt="project sample" width="650"  height="auto" />
+  <br/>
+  <img src="track budget screenshot 5.png" alt="project sample" width="650"  height="auto" />
+  <br/>
+
+  <h3><b>Track Budget</b></h3>
+
+</div>
+
+> Track Budget is a mobile web application where you can manage your budget: you have a list of purchases associated with a category, so that you can see how much money you spent and on what category.
 
 ## Built With <a name="built-with"></a>
 
